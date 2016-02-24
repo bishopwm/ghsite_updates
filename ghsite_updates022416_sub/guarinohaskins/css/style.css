@@ -1123,7 +1123,6 @@ img {
   padding: 0.5em;
   border: none;
   cursor: pointer;
-  margin-bottom: 1.5em;
 }
 .dropbtn:hover {
   background-color: #195a6b;
@@ -1135,8 +1134,6 @@ img {
 .dropdown-content {
   display: none;
   position: absolute;
-  background color: blue;
-  right: 0;
 }
 .dropdown-content a:hover {
   color: white;
@@ -1146,6 +1143,7 @@ img {
   background-color: #50748a;
   padding: 1em;
   margin-top: 0;
+  font-size: 16px;
 }
 .press-dropdown-btn {
   background-color: #3bb1d1;
@@ -1158,6 +1156,9 @@ img {
 }
 .press-dropdown-btn:hover {
   background-color: #195a6b;
+}
+.recent_press {
+  margin-top: 1em;
 }
 /**
  * Splash page styles
