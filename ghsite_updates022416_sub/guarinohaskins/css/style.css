@@ -1147,6 +1147,18 @@ img {
   padding: 1em;
   margin-top: 0;
 }
+.press-dropdown-btn {
+  background-color: #3bb1d1;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 0.2em;
+  padding: 0.3em;
+  cursor: pointer;
+}
+.press-dropdown-btn:hover {
+  background-color: #195a6b;
+}
 /**
  * Splash page styles
  */
@@ -2259,6 +2271,7 @@ img {
 }
 .app .page.people .leaders-list .leaders-list-item .leaders-list-img {
   margin-bottom: 10px;
+  border-radius: 0.2em;
 }
 @media (max-width: 1000px) {
   .app .page.people .leaders-list .leaders-list-item .leaders-list-img {
@@ -2273,6 +2286,76 @@ img {
 }
 @media (max-width: 1000px) {
   .app .page.people .leaders-list .leaders-list-item .leaders-list-label {
+    text-align: center;
+  }
+}
+/**
+ * People Team list styles
+ */
+.app .page.people .team-list,
+.app .page.people .team-list-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/**
+  * People Team list placeholder
+  */
+#team-list-spaceholder {
+  visibility: hidden;
+}
+.app .page.people .team-list:before,
+.app .page.people .team-list:after {
+  content: "";
+  display: table;
+}
+.app .page.people .team-list:after {
+  clear: both;
+}
+.app .page.people .team-list {
+  height: 24em;
+  overflow: scroll;
+  border-radius: 0.4em;
+  background-color: rgba(78, 185, 214, 0.25);
+}
+@media (min-width: 1001px) {
+  .app .page.people .team-list .team-list-item {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .app .page.people .team-list .team-list-item {
+    float: left;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  #team-list-spaceholder {
+    display: none;
+  }
+}
+.app .page.people .team-list .team-list-item .team-list-img {
+  margin-bottom: 0.2em;
+  width: 85%;
+  border-radius: 0.2em;
+}
+@media (max-width: 1000px) {
+  .app .page.people .team-list .team-list-item .team-list-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.app .page.people .team-list .team-list-item .team-list-label {
+  color: #50748a;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+@media (max-width: 1000px) {
+  .app .page.people .team-list .team-list-item .team-list-label {
     text-align: center;
   }
 }
@@ -2321,6 +2404,44 @@ img {
   .app .overlay .popup .popup-viewport .popup-content.people.bio .bio-header .bio-title .bio-role {
     margin-bottom: 20px;
   }
+}
+/*People sub-page 2 styles
+*/
+.app .page.people .sub-page-2 {
+  background: -webkit-linear-gradient(270deg, #c5d1da, white 75%);
+  background: linear-gradient(180deg, #c5d1da, white 75%);
+}
+.app .page.people .sub-page-2:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../img/people-bg.png) no-repeat center;
+  pointer-events: none;
+}
+.app .page.people .sub-page-2:before {
+  background-position: center top;
+}
+
+/**
+ * People leaders list styles
+ */
+.app .page.people .leaders-list,
+.app .page.people .leaders-list-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/**
+ * People team list styles
+ */
+.app .page.people .team-list,
+.app .page.people .team-list-item {
+  margin: 0;
+  padding: 0.5em;
+  list-style: none;
 }
 /**
  * Careers page styles
