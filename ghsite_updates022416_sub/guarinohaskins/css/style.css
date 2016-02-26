@@ -2328,7 +2328,7 @@ img {
     float: none;
   }
   .app .page.people .team-list .team-list-item {
-    /*float: left;
+    float: left;
     width: 40%;
     padding-right: 0;
     margin-bottom: 30px;
@@ -2336,7 +2336,7 @@ img {
   #team-list-spaceholder {
     display: none;
   }
-}*/
+}
 .app .page.people .team-list .team-list-item .team-list-img {
   margin-bottom: 0.2em;
   width: 85%;
