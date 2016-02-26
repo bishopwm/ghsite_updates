@@ -2299,12 +2299,6 @@ img {
   padding: 0;
   list-style: none;
 }
-/**
-  * People Team list placeholder
-  */
-#team-list-spaceholder {
-  visibility: hidden;
-}
 .app .page.people .team-list:before,
 .app .page.people .team-list:after {
   content: "";
@@ -2322,15 +2316,20 @@ img {
 @media (min-width: 1001px) {
   .app .page.people .team-list .team-list-item {
     float: left;
-    width: 25%;
+    width: 20%;
     padding-right: 10px;
     margin-bottom: 30px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 365px) {
+  .app .page.people .team-list {
+    height: 100em;
+    background-color: white;
+    float: none;
+  }
   .app .page.people .team-list .team-list-item {
-    float: left;
-    width: 100%;
+    /*float: left;*/
+    width: 40%;
     padding-right: 0;
     margin-bottom: 30px;
   }
@@ -2343,6 +2342,27 @@ img {
   width: 85%;
   border-radius: 0.2em;
 }
+@media (max-width: 1000px) {
+  .app .page.people .team-list {
+    height: 100em;
+    background-color: white;
+  }
+  .app .page.people .team-list .team-list-item {
+    float: left;
+    width: 40%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  #team-list-spaceholder {
+    display: none;
+  }
+}
+.app .page.people .team-list .team-list-item .team-list-img {
+  margin-bottom: 0.2em;
+  width: 85%;
+  border-radius: 0.2em;
+}
+
 @media (max-width: 1000px) {
   .app .page.people .team-list .team-list-item .team-list-img {
     display: block;
