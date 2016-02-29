@@ -2310,6 +2310,7 @@ img {
 .app .page.people .team-list {
   height: 24em;
   overflow: scroll;
+  /*-webkit-overflow-scrolling: touch;*/
   border-radius: 0.4em;
   background-color: rgba(78, 185, 214, 0.25);
 }
@@ -2336,11 +2337,11 @@ img {
   #team-list-spaceholder {
     display: none;
   }
-}
 .app .page.people .team-list .team-list-item .team-list-img {
   margin-bottom: 0.2em;
   width: 85%;
   border-radius: 0.2em;
+  }
 }
 @media (max-width: 1000px) {
   .app .page.people .team-list {
@@ -2373,7 +2374,7 @@ img {
 .app .page.people .team-list .team-list-item .team-list-label {
   color: #50748a;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 @media (max-width: 1000px) {
   .app .page.people .team-list .team-list-item .team-list-label {
