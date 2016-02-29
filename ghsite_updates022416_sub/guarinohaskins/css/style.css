@@ -2320,11 +2320,12 @@ img {
     width: 20%;
     padding-right: 10px;
     margin-bottom: 30px;
+    font-size: 22px;
   }
 }
 @media (max-width: 365px) {
   .app .page.people .team-list {
-    height: 100em;
+    height: 100%;
     background-color: white;
     float: none;
   }
@@ -2345,7 +2346,7 @@ img {
 }
 @media (max-width: 1000px) {
   .app .page.people .team-list {
-    height: 100em;
+    height: 100%;
     background-color: white;
   }
   .app .page.people .team-list .team-list-item {
@@ -2372,8 +2373,8 @@ img {
   }
 }
 .app .page.people .team-list .team-list-item .team-list-label {
-  color: #50748a;
-  font-weight: bold;
+  color: #1c4259;
+  /*font-weight: bold;*/
   font-size: 0.5em;
 }
 @media (max-width: 1000px) {
